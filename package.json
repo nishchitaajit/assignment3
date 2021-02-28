@@ -1,0 +1,26 @@
+{
+  "name": "trial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w server -e js,graphql server/server.js",
+    "compile": "babel src --out-dir public",
+    "watch": "babel src --out-dir public --watch --verbose",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nish ajit",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.21.0",
+    "express": "^4.17.1",
+    "graphql": "^0.13.2",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10"
+  }
+}
